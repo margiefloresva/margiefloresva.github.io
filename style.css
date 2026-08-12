@@ -172,7 +172,7 @@ h3 {
   box-shadow: var(--shadow);
   display: block;
 }
-
+<img src="profile.jpg" alt="Margie Flores" class="profile-photo">
 /* ABOUT */
 
 .section {
