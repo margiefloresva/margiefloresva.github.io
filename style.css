@@ -46,8 +46,19 @@ h3 { margin: 0 0 10px; color:var(--navy); }
 .btn { padding:13px 20px; border-radius:10px; font-weight:700; border:1px solid var(--blue); }
 .primary { background:var(--blue); color:white; }
 .secondary { color:var(--blue); background:white; }
-.hero-photo-wrap { display:flex; justify-content:center; }
+.hero-photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hero-photo-wrap img {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 8px solid white;
+  box-shadow: var(--shadow);
+}
   width:min(340px, 100%); aspect-ratio: 1 / 1; object-fit:cover;
   border-radius: 28px; border: 8px solid white; box-shadow:var(--shadow);
 }
