@@ -37,7 +37,10 @@ a {
   margin: 0 auto;
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER
+========================= */
 
 .site-header {
   position: sticky;
@@ -80,10 +83,17 @@ a {
   cursor: pointer;
 }
 
-/* HERO */
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
-  background: linear-gradient(135deg, #f7fbff 0%, #eaf4fc 100%);
+  background: linear-gradient(
+    135deg,
+    #f7fbff 0%,
+    #eaf4fc 100%
+  );
   padding: 85px 0;
 }
 
@@ -156,7 +166,10 @@ h3 {
   background: white;
 }
 
-/* PROFILE PHOTO */
+
+/* =========================
+   PROFILE PHOTO
+========================= */
 
 .hero-photo-wrap {
   display: flex;
@@ -174,7 +187,10 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-/* ABOUT */
+
+/* =========================
+   ABOUT
+========================= */
 
 .section {
   padding: 85px 0;
@@ -221,7 +237,10 @@ h3 {
   color: var(--muted);
 }
 
-/* SERVICES */
+
+/* =========================
+   SERVICES
+========================= */
 
 .cards {
   display: grid;
@@ -253,7 +272,10 @@ h3 {
   margin-bottom: 14px;
 }
 
-/* WORK SAMPLES */
+
+/* =========================
+   WORK SAMPLES
+========================= */
 
 .section-intro {
   color: var(--muted);
@@ -281,25 +303,35 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+
+/* IMAGE AREA */
+
 .sample-image {
   width: 100%;
-  height: 320px;
+  height: 340px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #eef6fc;
   overflow: hidden;
-  padding: 12px;
+  padding: 14px;
   border-radius: 16px 16px 0 0;
 }
-}
+
+
+/* FULL IMAGE — NO CROPPING */
 
 .sample-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
   display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
+
+
+/* SAMPLE CONTENT */
 
 .sample-content {
   padding: 24px;
@@ -328,7 +360,10 @@ h3 {
   font-weight: 600;
 }
 
-/* CONTACT */
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
   background: var(--navy);
@@ -363,7 +398,10 @@ h3 {
   border-radius: 10px;
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
   text-align: center;
@@ -372,7 +410,10 @@ footer {
   font-size: 0.9rem;
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 800px) {
 
@@ -420,9 +461,15 @@ footer {
     grid-template-columns: 1fr;
   }
 
- .sample-image {
-  height: 260px;
-}
+  .sample-image {
+    height: 280px;
+    padding: 10px;
+  }
+
+  .sample-image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
   .section {
     padding: 65px 0;
