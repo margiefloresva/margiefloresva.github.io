@@ -283,12 +283,15 @@ h3 {
 
 .sample-image {
   width: 100%;
-  height: 260px;
+  height: 320px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #eef6fc;
   overflow: hidden;
+  padding: 12px;
+  border-radius: 16px 16px 0 0;
+}
 }
 
 .sample-image img {
@@ -417,12 +420,11 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .sample-image {
-    height: 135px;
-  }
+ .sample-image {
+  height: 260px;
+}
 
   .section {
     padding: 65px 0;
   }
 }
-.sample-image { width: 100%; height: 180px; overflow: hidden; border-radius: 16px 16px 0 0; } .sample-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
