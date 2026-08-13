@@ -282,12 +282,20 @@ h3 {
 }
 
 .sample-image {
-  height: 155px;
+  width: 100%;
+  height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4rem;
-  background: linear-gradient(135deg, #eef6fc, #dceefb);
+  background: #eef6fc;
+  overflow: hidden;
+}
+
+.sample-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .sample-content {
